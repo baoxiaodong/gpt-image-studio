@@ -2,8 +2,8 @@
 
 # 🎨 GPT Image Studio
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/88lin/gpt-image-studio?style=flat-square&color=eab308)](https://github.com/88lin/gpt-image-studio/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/88lin/gpt-image-studio?style=flat-square&color=3b82f6)](https://github.com/88lin/gpt-image-studio/network/members)
+[![GitHub Repo stars](https://img.shields.io/github/stars/baoxiaodong/gpt-image-studio?style=flat-square&color=eab308)](https://github.com/baoxiaodong/gpt-image-studio/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/baoxiaodong/gpt-image-studio?style=flat-square&color=3b82f6)](https://github.com/baoxiaodong/gpt-image-studio/network/members)
 [![License](https://img.shields.io/badge/license-MIT-10b981?style=flat-square)](LICENSE)
 [![React](https://img.shields.io/badge/React-19-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -110,7 +110,7 @@
 <details>
 <summary><strong>▲ 方式一：Vercel 一键部署 (推荐)</strong></summary>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F88lin%2Fgpt-image-studio&project-name=gpt-image-studio&repository-name=gpt-image-studio)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbaoxiaodong%2Fgpt-image-studio&project-name=gpt-image-studio&repository-name=gpt-image-studio)
 
 点击上方按钮导入仓库即可，Vercel 会自动执行构建并部署静态文件。
 
@@ -181,7 +181,7 @@ $env:VITE_DEFAULT_API_URL="https://api.openai.com/v1"; npm run deploy:cf
 
 **1. Docker CLI 示例**
 
-如果你已将镜像发布到 `ghcr.io/88lin/gpt-image-studio:latest`，可按下面方式运行：
+如果你已将镜像发布到 `ghcr.io/baoxiaodong/gpt-image-studio:latest`，可按下面方式运行：
 
 ```bash
 docker run -d -p 8080:80 \
@@ -189,7 +189,7 @@ docker run -d -p 8080:80 \
   -e ENABLE_API_PROXY=true \
   -e LOCK_API_PROXY=true \
   -e API_PROXY_URL=https://api.openai.com/v1 \
-  ghcr.io/88lin/gpt-image-studio:latest
+  ghcr.io/baoxiaodong/gpt-image-studio:latest
 ```
 
 *(注：使用 host 网络时加 `--network host`，修改容器监听端口使用 `-e PORT=28080`)*
@@ -199,7 +199,7 @@ docker run -d -p 8080:80 \
 ```yaml
 services:
   gpt-image-studio:
-    image: ghcr.io/88lin/gpt-image-studio:latest
+    image: ghcr.io/baoxiaodong/gpt-image-studio:latest
     environment:
       - DEFAULT_API_URL=https://api.openai.com/v1
     ports:
@@ -447,10 +447,10 @@ VITE_API_PROXY_LOCKED=false
 
 ## ⭐ Star History
 
-<a href="https://www.star-history.com/?type=date&repos=88lin%2Fgpt-image-studio">
+<a href="https://www.star-history.com/?type=date&repos=baoxiaodong%2Fgpt-image-studio">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=88lin/gpt-image-studio&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=88lin/gpt-image-studio&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=88lin/gpt-image-studio&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=baoxiaodong/gpt-image-studio&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=baoxiaodong/gpt-image-studio&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=baoxiaodong/gpt-image-studio&type=date&legend=top-left" />
  </picture>
 </a>
